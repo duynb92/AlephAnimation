@@ -1,0 +1,15 @@
+PODS:
+  - Hero (1.2.0)
+  - ViewAnimator (2.1.0)
+
+DEPENDENCIES:
+  - Hero
+  - ViewAnimator
+
+SPEC CHECKSUMS:
+  Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
+  ViewAnimator: c22be7d8a68d3b3ebba989ee755a19f96ddf6c22
+
+PODFILE CHECKSUM: 31a6709682705945791c31c4649c6a8478a8f271
+
+COCOAPODS: 1.4.0
