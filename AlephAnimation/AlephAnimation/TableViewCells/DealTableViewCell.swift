@@ -11,10 +11,10 @@ import Hero
 
 class DealTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lbTime: UILabel!
     @IBOutlet weak var lbAmount: UILabel!
     @IBOutlet weak var lbName: UILabel!
     @IBOutlet weak var ivThumb: UIImageView!
+    @IBOutlet weak var lbDistance: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.hero.modifiers = [.translate(x: -60), .fade]
@@ -27,13 +27,13 @@ class DealTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populateData(image: UIImage? = nil, name: String, amount: String, index: Double) {
+    func populateData(image: UIImage? = nil, name: String?, amount: String?, distance: String?) {
         self.lbAmount.text = amount
         self.lbName.text = name
         if let image = image {
             self.ivThumb.image = image
         }
-//        self.hero.modifiers = [.delay(0.1 * index)]
+        lbDistance.text = distance
     }
     
     override func prepareForReuse() {

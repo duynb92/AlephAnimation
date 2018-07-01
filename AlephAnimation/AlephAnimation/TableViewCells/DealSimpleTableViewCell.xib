@@ -56,12 +56,12 @@
             <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="lbDistance" destination="nBS-fc-nfO" id="OTP-Wy-Suc"/>
                 <outlet property="lbName" destination="1h1-ki-QCG" id="Gcq-hr-QiE"/>
-                <outlet property="lbTime" destination="nBS-fc-nfO" id="apP-kR-CF2"/>
             </connections>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="arrow-point-to-right" width="64" height="64"/>
+        <image name="arrow-point-to-right" width="32" height="32"/>
     </resources>
 </document>

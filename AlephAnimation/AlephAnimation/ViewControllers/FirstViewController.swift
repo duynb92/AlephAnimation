@@ -13,14 +13,19 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var tbDeals: UITableView!
     
-    var names = ["HMV Calvin Harris Album","Levi's 501 Release Party", "Billy Bombers Hot Dog", "Starbucks Coffee Mob", "MCDonalds Sale", "SG Air College Flights"]
+    var deals = [
+        Deal(title: "HMV Calvin Harris Album", amount: 38, totalAmount: 90, distance: 248),
+        Deal(title: "Levi's 501 Release Party", amount: 16, totalAmount: 42, distance: 136),
+        Deal(title: "Billy Bombers Hot Dog", amount: 14, totalAmount: 22, distance: 2),
+        Deal(title: "Starbucks Coffee Mob", amount: 80, totalAmount: 167, distance: 136),
+        Deal(title: "MCDonalds Sale", amount: 38, totalAmount: 90, distance: 1000),
+        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400),
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tbDeals.register(UINib(nibName: "DealSimpleTableViewCell", bundle: nil), forCellReuseIdentifier: "DealSimpleTableViewCell")
         tbDeals.backgroundView?.hero.id = "tablebackground"
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,11 +60,11 @@ extension FirstViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealSimpleTableViewCell", for: indexPath) as! DealSimpleTableViewCell
-        cell.populateData(name: names[indexPath.row])
+        cell.populateData(name: deals[indexPath.row].title, distance: deals[indexPath.row].distanceDescription())
         
         if indexPath.row < 2 {
             cell.lbName.hero.id = "\(indexPath.row)"
-            cell.lbTime.hero.id = "time\(indexPath.row)"
+            cell.lbDistance.hero.id = "distance\(indexPath.row)"
         }
         return cell
     }

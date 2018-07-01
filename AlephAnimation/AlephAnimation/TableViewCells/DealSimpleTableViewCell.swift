@@ -11,7 +11,7 @@ import UIKit
 class DealSimpleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbTime: UILabel!
+    @IBOutlet weak var lbDistance: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,8 +23,8 @@ class DealSimpleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populateData(name: String) {
-
+    func populateData(name: String?, distance: String?) {
+        lbDistance.text = distance
         self.lbName.text = name
     }
     

@@ -16,7 +16,14 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var tbDeals: UITableView!
     @IBOutlet weak var btnBack: UIButton!
     
-    var names = ["HMV Calvin Harris Album","Levi's 501 Release Party", "Billy Bombers Hot Dog", "Starbucks Coffee Mob", "MCDonalds Sale", "SG Air College Flights"]
+    var deals = [
+        Deal(title: "HMV Calvin Harris Album", amount: 38, totalAmount: 90, distance: 248),
+        Deal(title: "Levi's 501 Release Party", amount: 16, totalAmount: 42, distance: 136),
+        Deal(title: "Billy Bombers Hot Dog", amount: 14, totalAmount: 22, distance: 2),
+        Deal(title: "Starbucks Coffee Mob", amount: 80, totalAmount: 167, distance: 136),
+        Deal(title: "MCDonalds Sale", amount: 38, totalAmount: 90, distance: 1000),
+        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400),
+    ]
     
     var delayLeftTranslateInterval: Double = 0.07
     
@@ -26,7 +33,7 @@ class SecondViewController: UIViewController {
         tbDeals.backgroundView?.hero.id = "tablebackground"
         tbDeals.hero.modifiers = [.cascade]
 
-        vNavbar.hero.modifiers = [.fade, .translate(y: 100), .delay(delayLeftTranslateInterval * Double(names.count))]
+        vNavbar.hero.modifiers = [.fade, .translate(y: 100), .delay(delayLeftTranslateInterval * Double(deals.count))]
         // Do any additional setup after loading the view.
     }
 
@@ -53,7 +60,7 @@ class SecondViewController: UIViewController {
 
 extension SecondViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return names.count
+        return deals.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -62,10 +69,10 @@ extension SecondViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealTableViewCell", for: indexPath) as! DealTableViewCell
-        cell.populateData(name: names[indexPath.item], amount: "16 of 40 people", index: Double(indexPath.row))
+        cell.populateData(name: deals[indexPath.item].title, amount: deals[indexPath.item].amountDescription(), distance: deals[indexPath.item].distanceDescription())
         if indexPath.row < 2 {
             cell.lbName.hero.id = "\(indexPath.row)"
-            cell.lbTime.hero.id = "time\(indexPath.row)"
+            cell.lbDistance.hero.id = "distance\(indexPath.row)"
         }
         cell.hero.modifiers = [.fade, .translate(x:-100), .arc, .delay(delayLeftTranslateInterval * Double(indexPath.row))]
         return cell
@@ -88,7 +95,7 @@ extension SecondViewController: HeroViewControllerDelegate {
         if let _ = viewController as? FirstViewController {
             tbDeals.hero.modifiers = [.cascade]
             vHeader.hero.modifiers = [.fade, .translate(y: -100)]
-            vNavbar.hero.modifiers = [.fade, .translate(y: 100), .delay(delayLeftTranslateInterval * Double(names.count)), .duration(0.5)]
+            vNavbar.hero.modifiers = [.fade, .translate(y: 100), .delay(delayLeftTranslateInterval * Double(deals.count)), .duration(0.5)]
         }
     }
 }
