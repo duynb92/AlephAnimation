@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  AlephAnimation
 //
-//  Created by Duy Nguyen on 6/30/18.
-//  Copyright © 2018 Duy Nguyen. All rights reserved.
+//  Created by DuyN on 6/30/18.
+//  Copyright © 2018 DuyN. All rights reserved.
 //
 
 import UIKit

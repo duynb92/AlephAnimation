@@ -1,15 +1,21 @@
 PODS:
   - Hero (1.2.0)
+  - Nimble (7.1.1)
+  - Quick (1.3.0)
   - ViewAnimator (2.1.0)
 
 DEPENDENCIES:
   - Hero
+  - Nimble
+  - Quick
   - ViewAnimator
 
 SPEC CHECKSUMS:
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   ViewAnimator: c22be7d8a68d3b3ebba989ee755a19f96ddf6c22
 
-PODFILE CHECKSUM: 31a6709682705945791c31c4649c6a8478a8f271
+PODFILE CHECKSUM: d2acf940b33fa0eb5f1008fc7bc93c47bff23d75
 
 COCOAPODS: 1.4.0

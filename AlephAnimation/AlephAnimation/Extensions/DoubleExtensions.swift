@@ -2,7 +2,7 @@
 //  DoubleExtensions.swift
 //  AlephAnimation
 //
-//  Created by DuyN on 7/1/18.
+//  Created by DuyN on 6/30/18.
 //  Copyright © 2018 DuyN. All rights reserved.
 //
 

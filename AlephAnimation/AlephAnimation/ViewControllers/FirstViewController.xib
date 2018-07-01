@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="AlephAnimation" customModuleProvider="target">
             <connections>
+                <outlet property="dataProvider" destination="kAH-Ee-Epb" id="p73-g9-Bxw"/>
                 <outlet property="tbDeals" destination="Oki-yu-kgs" id="Psn-hN-xBz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -29,8 +30,8 @@
                         <constraint firstAttribute="height" constant="100" id="mL4-oY-Zs9"/>
                     </constraints>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="cI8-ar-bls"/>
-                        <outlet property="delegate" destination="-1" id="7nu-xm-xBE"/>
+                        <outlet property="dataSource" destination="kAH-Ee-Epb" id="P8i-qr-gsM"/>
+                        <outlet property="delegate" destination="kAH-Ee-Epb" id="FIc-bH-9SL"/>
                         <outletCollection property="gestureRecognizers" destination="qWs-db-kHC" appends="YES" id="E49-zj-vyH"/>
                     </connections>
                 </tableView>
@@ -66,5 +67,6 @@
                 <outlet property="delegate" destination="-1" id="0dQ-Ob-OnF"/>
             </connections>
         </swipeGestureRecognizer>
+        <customObject id="kAH-Ee-Epb" customClass="SimpleDealDataProvider" customModule="AlephAnimation" customModuleProvider="target"/>
     </objects>
 </document>
