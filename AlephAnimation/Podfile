@@ -6,7 +6,6 @@ target "AlephAnimation" do
   use_frameworks!
 
   pod 'Hero'
-  pod 'ViewAnimator'
   
   target "AlephAnimationTests" do
       pod 'Quick'
