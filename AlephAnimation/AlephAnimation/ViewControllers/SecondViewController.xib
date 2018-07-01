@@ -203,8 +203,8 @@
                 <constraint firstItem="IqZ-Gk-xbQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hut-d7-4VN"/>
                 <constraint firstItem="xRt-cU-qSj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jXn-Mw-eig"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IqZ-Gk-xbQ" secondAttribute="bottom" id="p4C-Ml-IA9"/>
+                <constraint firstItem="Y3L-RS-iQx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rzh-5D-POQ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xRt-cU-qSj" secondAttribute="bottom" id="tDv-mF-rx2"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="Y3L-RS-iQx" secondAttribute="top" id="vGR-5D-uPn"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="203" y="37"/>
