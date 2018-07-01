@@ -71,13 +71,15 @@ class SecondViewController: UIViewController {
 extension SecondViewController: HeroViewControllerDelegate {
     func heroWillStartAnimatingTo(viewController: UIViewController) {
         if viewController is FirstViewController {
-//            vHeader.hero.modifiers = [.fade, .translate(y: -100)]
-            vNavbar.hero.modifiers = [.fade, .translate(y: 100) ]
+            vNavbar.hero.modifiers = [.fade, .translate(y: 100), .duration(0.5)]
+            vHeader.hero.modifiers = [.fade, .translate(y: -100), .delay(delayLeftTranslateInterval * Double(tbDeals.visibleCells.count) + 0.5)]
+            for simpleDealCell in (viewController as! FirstViewController).tbDeals.visibleCells {
+                (simpleDealCell as! DealSimpleTableViewCell).lbName.hero.modifiers = [.delay(delayLeftTranslateInterval * Double(tbDeals.visibleCells.count) + 0.5)]
+                (simpleDealCell as! DealSimpleTableViewCell).lbDistance.hero.modifiers = [.delay(delayLeftTranslateInterval * Double(tbDeals.visibleCells.count) + 0.5)]
+            }
         }
         for (index, cell) in tbDeals.visibleCells.reversed().enumerated() {
-            if index < tbDeals.visibleCells.count - 1 {
-                cell.hero.modifiers = [.fade, .translate(x:-100), .arc, .delay(delayLeftTranslateInterval * Double(index))]
-            }
+            cell.hero.modifiers = [.fade, .translate(x:-100), .arc, .delay(delayLeftTranslateInterval * Double(index) + 0.5)]
         }
     }
     func heroWillStartAnimatingFrom(viewController: UIViewController) {
@@ -88,4 +90,5 @@ extension SecondViewController: HeroViewControllerDelegate {
         }
     }
 }
+
 

@@ -13,6 +13,7 @@ class FirstViewController: UIViewController {
     
     @IBOutlet weak var tbDeals: UITableView!
     @IBOutlet var dataProvider: SimpleDealDataProvider!
+    @IBOutlet var panGesture: UIPanGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +43,25 @@ class FirstViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func swipeDownAction(_ sender: Any) {
-        navigationController?.pushViewController(SecondViewController(), animated: true)
+    @IBAction func panDownAction(_ sender: Any) {
+        DispatchQueue.main.async { [weak self] in
+            guard let _self = self else { return }
+            let translation = _self.panGesture.translation(in: nil)
+            let progress = translation.y * 1.5 / _self.view.bounds.height
+            switch _self.panGesture.state {
+            case .began:
+                
+                _self.navigationController?.pushViewController(SecondViewController(), animated: true)
+            case .changed:
+                Hero.shared.update(progress)
+            default:
+                if progress + _self.panGesture.velocity(in: nil).y / _self.view.bounds.height > 0.15 {
+                    Hero.shared.finish(animate: true)
+                } else {
+                    Hero.shared.cancel()
+                }
+            }
+        }
     }
     
     /*
