@@ -14,7 +14,7 @@ import Nimble
 class SecondViewControllerTests: QuickSpec {
     
     override func spec() {
-        describe("When ViewController is loaded") {
+        describe("when ViewController is loaded") {
             var sut : SecondViewController!
             beforeEach {
                 sut = SecondViewController()

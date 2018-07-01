@@ -29,7 +29,7 @@ class SimpleDealDataProvider : NSObject, UITableViewDataSource, UITableViewDeleg
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealSimpleTableViewCell", for: indexPath) as! DealSimpleTableViewCell
         cell.configCell(name: dealManager.item(at: indexPath.row)?.title, distance: dealManager.item(at: indexPath.row)?.distanceDescription())
         
-        if indexPath.row < 2 {
+        if indexPath.row < 2 && cell.lbName != nil && cell.lbDistance != nil {
             cell.lbName.hero.id = "\(indexPath.row)"
             cell.lbDistance.hero.id = "distance\(indexPath.row)"
         }

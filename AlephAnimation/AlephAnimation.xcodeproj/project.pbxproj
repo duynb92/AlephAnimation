@@ -32,6 +32,7 @@
 		67BFFF7620E92CBB000A56D4 /* SimpleDealDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */; };
 		67BFFF7820E92FA5000A56D4 /* DealManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7720E92FA5000A56D4 /* DealManager.swift */; };
 		67BFFF7A20E930B6000A56D4 /* DealManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */; };
+		67BFFF7C20E93DC3000A56D4 /* DetailDealDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7B20E93DC3000A56D4 /* DetailDealDataProviderTests.swift */; };
 		9A8FE09529C4822A512B19E7 /* Pods_AlephAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AF6428D44A0BB03B3B7073 /* Pods_AlephAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +75,7 @@
 		67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDealDataProviderTests.swift; sourceTree = "<group>"; };
 		67BFFF7720E92FA5000A56D4 /* DealManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealManager.swift; sourceTree = "<group>"; };
 		67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealManagerTests.swift; sourceTree = "<group>"; };
+		67BFFF7B20E93DC3000A56D4 /* DetailDealDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDealDataProviderTests.swift; sourceTree = "<group>"; };
 		73666A250493EFB7F26232EA /* Pods-AlephAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		7E45CC4A88F6386E74FE10F8 /* Pods-AlephAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		A19D171D103B5E17CC87EE4B /* Pods-AlephAnimation-AlephAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation-AlephAnimationTests/Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				67BFFF6C20E8F847000A56D4 /* SecondViewControllerTests.swift */,
 				67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */,
 				67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */,
+				67BFFF7B20E93DC3000A56D4 /* DetailDealDataProviderTests.swift */,
 			);
 			path = AlephAnimationTests;
 			sourceTree = "<group>";
@@ -476,6 +479,7 @@
 				67BFFF7620E92CBB000A56D4 /* SimpleDealDataProviderTests.swift in Sources */,
 				67BFFF6820E8E71F000A56D4 /* FirstViewControllerTests.swift in Sources */,
 				67BFFF6620E8E1E6000A56D4 /* DealTests.swift in Sources */,
+				67BFFF7C20E93DC3000A56D4 /* DetailDealDataProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

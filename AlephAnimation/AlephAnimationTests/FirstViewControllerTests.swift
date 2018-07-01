@@ -13,7 +13,7 @@ import Nimble
 
 class FirstViewControllerTests: QuickSpec {
     override func spec() {
-        describe("When ViewController is loaded") {
+        describe("when ViewController is loaded") {
             var sut : FirstViewController!
             beforeEach {
                 sut = FirstViewController()

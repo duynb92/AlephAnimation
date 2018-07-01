@@ -14,14 +14,14 @@ import Nimble
 class DealManagerTests: QuickSpec {
     
     override func spec() {
-        describe("New DealManager") {
+        describe("new DealManager") {
             var sut : DealManager!
             beforeEach {
                 sut = DealManager()
             }
             context("when initialize") {
-                it("return exact 9 items") {
-                    expect(sut.count()).to(equal(9))
+                it("return exact 0 items") {
+                    expect(sut.count()).to(equal(0))
                 }
             }
             

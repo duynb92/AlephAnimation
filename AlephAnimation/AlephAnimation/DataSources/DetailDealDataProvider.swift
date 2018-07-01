@@ -27,7 +27,7 @@ class DetailDealDataProvider : NSObject, UITableViewDataSource, UITableViewDeleg
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealTableViewCell", for: indexPath) as! DealTableViewCell
         cell.configCell(image: dealManager.item(at: indexPath.item)?.thumbnail, name: dealManager.item(at: indexPath.item)?.title, amount: dealManager.item(at: indexPath.item)?.amountDescription(), distance: dealManager.item(at: indexPath.item)?.distanceDescription())
-        if indexPath.row < 2 {
+        if indexPath.row < 2 && cell.lbName != nil && cell.lbDistance != nil {
             cell.lbName.hero.id = "\(indexPath.row)"
             cell.lbDistance.hero.id = "distance\(indexPath.row)"
         }
