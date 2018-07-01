@@ -27,21 +27,26 @@ class SimpleDealDataProviderTests: QuickSpec {
             }
         }
         
-        describe("cell for row") {
+        describe("when reload data") {
             var sut : SimpleDealDataProvider!
+            var mockTableView : MockTableView!
             beforeEach {
                 sut = SimpleDealDataProvider()
-            }
-            
-            it("config cell is called") {
-                let mockTableView =  MockTableView()
+                mockTableView =  MockTableView()
                 mockTableView.dataSource = sut
                 mockTableView.register(MockDealSimpleTableViewCell.self, forCellReuseIdentifier: "DealSimpleTableViewCell")
                 let dealManager = DealManager()
-                    dealManager.addItem(deal: Deal(title: "Deal 1", amount: 30, totalAmount: 40, distance: nil, thumbnail: nil))
+                dealManager.addItem(deal: Deal(title: "Deal 1", amount: 30, totalAmount: 40, distance: nil, thumbnail: nil))
                 sut.setDealManager(dealManager: dealManager)
                 mockTableView.reloadData()
-                
+            }
+            
+            it("dequeueCell is called") {
+                let _ = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0))
+                expect(mockTableView.cellGotDequeued).to(equal(true))
+            }
+            
+            it("config cell is called") {
                 let cell = mockTableView.cellForRow(at: IndexPath(row: 0, section: 0)) as! MockDealSimpleTableViewCell
                 expect(cell.configCellCalled).to(equal(true))
             }
