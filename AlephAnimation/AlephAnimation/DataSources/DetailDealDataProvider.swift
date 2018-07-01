@@ -9,22 +9,15 @@
 import UIKit
 
 class DetailDealDataProvider : NSObject, UITableViewDataSource, UITableViewDelegate {
-    var deals = [
-        Deal(title: "HMV Calvin Harris Album", amount: 38, totalAmount: 90, distance: 248, thumbnail: "calvinharris"),
-        Deal(title: "Levi's 501 Release Party", amount: 16, totalAmount: 42, distance: 136, thumbnail: "levis"),
-        Deal(title: "Billy Bombers Hot Dog", amount: 14, totalAmount: 22, distance: 2, thumbnail: "hotdog"),
-        Deal(title: "Starbucks Coffee Mob", amount: 80, totalAmount: 167, distance: 136, thumbnail: "starbucks"),
-        Deal(title: "MCDonalds Sale", amount: 38, totalAmount: 90, distance: 1000, thumbnail: "mcdonald"),
-        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400, thumbnail: "sg-air"),
-        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400, thumbnail: "sg-air"),
-        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400, thumbnail: "sg-air"),
-        Deal(title: "SG Air College Flights", amount: 14, totalAmount: 16, distance: 16400, thumbnail: "sg-air"),
-        ]
-    
     var delayLeftTranslateInterval: Double = 0.07
+    var dealManager : DealManager!
+    
+    func setDealManager(dealManager: DealManager) {
+        self.dealManager = dealManager
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return deals.count
+        return dealManager.count()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -33,7 +26,7 @@ class DetailDealDataProvider : NSObject, UITableViewDataSource, UITableViewDeleg
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DealTableViewCell", for: indexPath) as! DealTableViewCell
-        cell.populateData(image: deals[indexPath.item].thumbnail, name: deals[indexPath.item].title, amount: deals[indexPath.item].amountDescription(), distance: deals[indexPath.item].distanceDescription())
+        cell.configCell(image: dealManager.item(at: indexPath.item)?.thumbnail, name: dealManager.item(at: indexPath.item)?.title, amount: dealManager.item(at: indexPath.item)?.amountDescription(), distance: dealManager.item(at: indexPath.item)?.distanceDescription())
         if indexPath.row < 2 {
             cell.lbName.hero.id = "\(indexPath.row)"
             cell.lbDistance.hero.id = "distance\(indexPath.row)"

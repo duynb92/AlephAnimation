@@ -14,7 +14,6 @@
 		675F27C720E68ECC00FCDF8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675F27C520E68ECC00FCDF8E /* Main.storyboard */; };
 		675F27C920E68ECD00FCDF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675F27C820E68ECD00FCDF8E /* Assets.xcassets */; };
 		675F27CC20E68ECD00FCDF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675F27CA20E68ECD00FCDF8E /* LaunchScreen.storyboard */; };
-		675F27D720E68ECD00FCDF8E /* AlephAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675F27D620E68ECD00FCDF8E /* AlephAnimationTests.swift */; };
 		67BFFF5720E8B872000A56D4 /* DealSimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BFFF5120E8B871000A56D4 /* DealSimpleTableViewCell.xib */; };
 		67BFFF5820E8B872000A56D4 /* FirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BFFF5220E8B871000A56D4 /* FirstViewController.xib */; };
 		67BFFF5920E8B872000A56D4 /* DealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF5320E8B872000A56D4 /* DealTableViewCell.swift */; };
@@ -30,6 +29,9 @@
 		67BFFF6F20E8F86C000A56D4 /* DetailDealDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */; };
 		67BFFF7220E91AA7000A56D4 /* UIView+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7120E91AA7000A56D4 /* UIView+Glow.swift */; };
 		67BFFF7420E91BE6000A56D4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7320E91BE6000A56D4 /* ShadowView.swift */; };
+		67BFFF7620E92CBB000A56D4 /* SimpleDealDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */; };
+		67BFFF7820E92FA5000A56D4 /* DealManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7720E92FA5000A56D4 /* DealManager.swift */; };
+		67BFFF7A20E930B6000A56D4 /* DealManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */; };
 		9A8FE09529C4822A512B19E7 /* Pods_AlephAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AF6428D44A0BB03B3B7073 /* Pods_AlephAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +55,6 @@
 		675F27CB20E68ECD00FCDF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675F27CD20E68ECD00FCDF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		675F27D220E68ECD00FCDF8E /* AlephAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlephAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		675F27D620E68ECD00FCDF8E /* AlephAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlephAnimationTests.swift; sourceTree = "<group>"; };
 		675F27D820E68ECD00FCDF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67BFFF5120E8B871000A56D4 /* DealSimpleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealSimpleTableViewCell.xib; sourceTree = "<group>"; };
 		67BFFF5220E8B871000A56D4 /* FirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstViewController.xib; sourceTree = "<group>"; };
@@ -70,6 +71,9 @@
 		67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDealDataProvider.swift; sourceTree = "<group>"; };
 		67BFFF7120E91AA7000A56D4 /* UIView+Glow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Glow.swift"; sourceTree = "<group>"; };
 		67BFFF7320E91BE6000A56D4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDealDataProviderTests.swift; sourceTree = "<group>"; };
+		67BFFF7720E92FA5000A56D4 /* DealManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealManager.swift; sourceTree = "<group>"; };
+		67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealManagerTests.swift; sourceTree = "<group>"; };
 		73666A250493EFB7F26232EA /* Pods-AlephAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		7E45CC4A88F6386E74FE10F8 /* Pods-AlephAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		A19D171D103B5E17CC87EE4B /* Pods-AlephAnimation-AlephAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation-AlephAnimationTests/Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -161,11 +165,12 @@
 		675F27D520E68ECD00FCDF8E /* AlephAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
-				675F27D620E68ECD00FCDF8E /* AlephAnimationTests.swift */,
 				675F27D820E68ECD00FCDF8E /* Info.plist */,
 				67BFFF6520E8E1E6000A56D4 /* DealTests.swift */,
 				67BFFF6720E8E71F000A56D4 /* FirstViewControllerTests.swift */,
 				67BFFF6C20E8F847000A56D4 /* SecondViewControllerTests.swift */,
+				67BFFF7520E92CBB000A56D4 /* SimpleDealDataProviderTests.swift */,
+				67BFFF7920E930B6000A56D4 /* DealManagerTests.swift */,
 			);
 			path = AlephAnimationTests;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			children = (
 				67BFFF6A20E8E81D000A56D4 /* SimpleDealDataProvider.swift */,
 				67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */,
+				67BFFF7720E92FA5000A56D4 /* DealManager.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -447,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BFFF6B20E8E81D000A56D4 /* SimpleDealDataProvider.swift in Sources */,
+				67BFFF7820E92FA5000A56D4 /* DealManager.swift in Sources */,
 				67BFFF7420E91BE6000A56D4 /* ShadowView.swift in Sources */,
 				67BFFF5A20E8B872000A56D4 /* DealSimpleTableViewCell.swift in Sources */,
 				675F27C420E68ECC00FCDF8E /* SecondViewController.swift in Sources */,
@@ -465,8 +472,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BFFF6D20E8F847000A56D4 /* SecondViewControllerTests.swift in Sources */,
+				67BFFF7A20E930B6000A56D4 /* DealManagerTests.swift in Sources */,
+				67BFFF7620E92CBB000A56D4 /* SimpleDealDataProviderTests.swift in Sources */,
 				67BFFF6820E8E71F000A56D4 /* FirstViewControllerTests.swift in Sources */,
-				675F27D720E68ECD00FCDF8E /* AlephAnimationTests.swift in Sources */,
 				67BFFF6620E8E1E6000A56D4 /* DealTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

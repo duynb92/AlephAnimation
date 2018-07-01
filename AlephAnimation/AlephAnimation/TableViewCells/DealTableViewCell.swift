@@ -27,7 +27,7 @@ class DealTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populateData(image: String? = nil, name: String?, amount: String?, distance: String?) {
+    func configCell(image: String? = nil, name: String?, amount: String?, distance: String?) {
         self.lbAmount.text = amount
         self.lbName.text = name
         if let image = image {

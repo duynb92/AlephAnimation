@@ -23,7 +23,7 @@ class DealSimpleTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populateData(name: String?, distance: String?) {
+    func configCell(name: String?, distance: String?) {
         lbDistance.text = distance
         self.lbName.text = name
     }
