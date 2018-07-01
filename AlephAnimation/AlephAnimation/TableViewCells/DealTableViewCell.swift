@@ -27,11 +27,11 @@ class DealTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func populateData(image: UIImage? = nil, name: String?, amount: String?, distance: String?) {
+    func populateData(image: String? = nil, name: String?, amount: String?, distance: String?) {
         self.lbAmount.text = amount
         self.lbName.text = name
         if let image = image {
-            self.ivThumb.image = image
+            self.ivThumb.image = UIImage(named: image)
         }
         lbDistance.text = distance
     }

@@ -15,6 +15,7 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var vHeader: UIView!
     @IBOutlet weak var tbDeals: UITableView!
     @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var ivBack: UIImageView!
     
     @IBOutlet var dataProvider: DetailDealDataProvider!
     
@@ -41,7 +42,7 @@ class SecondViewController: UIViewController {
     @IBAction func backAction(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
+
     /*
     // MARK: - Navigation
 

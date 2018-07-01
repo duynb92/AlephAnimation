@@ -13,12 +13,14 @@ class Deal {
     var amount : Int?
     var totalAmount : Int?
     var distance : Int?
+    var thumbnail : String?
     
-    init(title : String?, amount : Int?, totalAmount : Int?, distance : Int?) {
+    init(title : String?, amount : Int?, totalAmount : Int?, distance : Int?, thumbnail: String?) {
         self.title = title
         self.amount = amount
         self.totalAmount = totalAmount
         self.distance = distance
+        self.thumbnail = thumbnail
     }
     
     func amountDescription() -> String? {

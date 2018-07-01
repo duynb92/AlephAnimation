@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navigationController.hero.isEnabled = true
         navigationController.hero.navigationAnimationType = .fade
         
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         return true
     }
 

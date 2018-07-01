@@ -28,6 +28,8 @@
 		67BFFF6B20E8E81D000A56D4 /* SimpleDealDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF6A20E8E81D000A56D4 /* SimpleDealDataProvider.swift */; };
 		67BFFF6D20E8F847000A56D4 /* SecondViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF6C20E8F847000A56D4 /* SecondViewControllerTests.swift */; };
 		67BFFF6F20E8F86C000A56D4 /* DetailDealDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */; };
+		67BFFF7220E91AA7000A56D4 /* UIView+Glow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7120E91AA7000A56D4 /* UIView+Glow.swift */; };
+		67BFFF7420E91BE6000A56D4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BFFF7320E91BE6000A56D4 /* ShadowView.swift */; };
 		9A8FE09529C4822A512B19E7 /* Pods_AlephAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3AF6428D44A0BB03B3B7073 /* Pods_AlephAnimation.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +68,8 @@
 		67BFFF6A20E8E81D000A56D4 /* SimpleDealDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDealDataProvider.swift; sourceTree = "<group>"; };
 		67BFFF6C20E8F847000A56D4 /* SecondViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewControllerTests.swift; sourceTree = "<group>"; };
 		67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDealDataProvider.swift; sourceTree = "<group>"; };
+		67BFFF7120E91AA7000A56D4 /* UIView+Glow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Glow.swift"; sourceTree = "<group>"; };
+		67BFFF7320E91BE6000A56D4 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		73666A250493EFB7F26232EA /* Pods-AlephAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		7E45CC4A88F6386E74FE10F8 /* Pods-AlephAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation/Pods-AlephAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		A19D171D103B5E17CC87EE4B /* Pods-AlephAnimation-AlephAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlephAnimation-AlephAnimationTests/Pods-AlephAnimation-AlephAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +143,7 @@
 		675F27BE20E68ECC00FCDF8E /* AlephAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				67BFFF7020E91A97000A56D4 /* Controls */,
 				67BFFF6920E8E7FB000A56D4 /* DataSources */,
 				67BFFF6220E8C944000A56D4 /* Extensions */,
 				67BFFF5F20E8C3D7000A56D4 /* Models */,
@@ -210,6 +215,15 @@
 				67BFFF6E20E8F86C000A56D4 /* DetailDealDataProvider.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		67BFFF7020E91A97000A56D4 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				67BFFF7120E91AA7000A56D4 /* UIView+Glow.swift */,
+				67BFFF7320E91BE6000A56D4 /* ShadowView.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,10 +447,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				67BFFF6B20E8E81D000A56D4 /* SimpleDealDataProvider.swift in Sources */,
+				67BFFF7420E91BE6000A56D4 /* ShadowView.swift in Sources */,
 				67BFFF5A20E8B872000A56D4 /* DealSimpleTableViewCell.swift in Sources */,
 				675F27C420E68ECC00FCDF8E /* SecondViewController.swift in Sources */,
 				675F27C020E68ECC00FCDF8E /* AppDelegate.swift in Sources */,
 				67BFFF6120E8C3E8000A56D4 /* Deal.swift in Sources */,
+				67BFFF7220E91AA7000A56D4 /* UIView+Glow.swift in Sources */,
 				67BFFF6F20E8F86C000A56D4 /* DetailDealDataProvider.swift in Sources */,
 				67BFFF6420E8C951000A56D4 /* DoubleExtensions.swift in Sources */,
 				675F27C220E68ECC00FCDF8E /* FirstViewController.swift in Sources */,
@@ -608,7 +624,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AlephAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlephAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -626,7 +645,10 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AlephAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlephAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -643,7 +665,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlephAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlephAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -660,7 +686,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AlephAnimationTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.AlephAnimationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
